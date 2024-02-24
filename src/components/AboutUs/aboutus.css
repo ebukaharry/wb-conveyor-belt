@@ -1,0 +1,129 @@
+.about__card {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.about__header {
+  background-image: url("../../assets/backgrounds/about-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contact__header {
+  background-image: url("../../assets/backgrounds/contact-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.about__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__data h3 {
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.about__data p {
+  color: #000000b0;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+}
+
+.about__img-container {
+  position: relative;
+}
+
+.about__img {
+  object-fit: cover;
+}
+
+.about__description {
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  color: #000000b0;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+
+.about__title {
+  font-size: clamp(1.8rem, 6vw, 4rem);
+  text-transform: uppercase;
+  margin: 1rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.mission__description {
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  padding-bottom: 3rem;
+  border-bottom: 1px solid black;
+}
+
+.people__img-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 100%;
+  gap: 2rem;
+}
+
+.people__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1110px) {
+  .about__card {
+    display: grid;
+    gap: 3rem;
+    padding: 4rem;
+  }
+
+  .about__data {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .about__img {
+    width: 100%;
+  }
+
+  .about__container.container {
+    padding: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  .people__img-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (max-width: 658px) {
+  .people__img-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .about__card {
+    padding: 3rem 0rem;
+  }
+
+  .people__img-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

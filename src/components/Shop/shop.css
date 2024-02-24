@@ -1,0 +1,50 @@
+.shop__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin: 2rem 3rem;
+}
+
+.shop__card {
+  border: 2px solid black;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  cursor: pointer;
+  position: relative;
+  background: #fff;
+}
+
+.shop__shadow {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transform: translate(-55px, -20px);
+}
+
+.shop__img {
+  width: 100%;
+}
+
+.shop__data {
+  display: grid;
+  gap: 1rem;
+}
+
+.shop__title {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.shop__cart {
+  background: #000;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 0.7rem 1.4rem;
+  bottom: 0.6rem;
+  right: 1rem;
+}

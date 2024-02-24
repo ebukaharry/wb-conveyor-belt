@@ -1,0 +1,167 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+}
+
+.footer__container {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+.footer__title-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__title-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.footer__logo-years {
+  width: 100px;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer__socials-text {
+  font-size: clamp(1rem, 4vw, 1.2rem);
+}
+
+.footer__socials-logo {
+  font-size: clamp(1rem, 4vw, 1.7rem);
+  gap: 1rem;
+}
+
+.footer__socials-logo a {
+  display: flex;
+  cursor: pointer;
+}
+
+.footer__title {
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  text-align: center;
+  font-weight: 600;
+}
+
+.footer__line {
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.footer__content {
+  display: flex;
+  gap: 16rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer__head {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer__link {
+  font-size: 0.9rem;
+  color: #ffffffa1;
+  line-height: 2;
+}
+
+.footer__address {
+  display: grid;
+  gap: 2rem;
+}
+
+.footer__location {
+  color: #ffffffa1;
+  line-height: 1.7;
+}
+
+.footer__location-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer__info {
+  font-size: clamp(0.9rem, 3vw, 1rem);
+}
+
+.footer__locations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.footer__copyright {
+  text-align: center;
+  font-size: clamp(0.9rem, 4vw, 1rem);
+}
+
+@media screen and (max-width: 1230px) {
+  .footer__locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .footer__title-container {
+    padding: 0 0.3rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .footer__address {
+    margin-left: 1rem;
+  }
+
+  .footer__locations {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer__logo-years {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer__socials {
+    gap: 1rem;
+  }
+
+  .footer__title-container {
+    padding: 0 0.3rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .footer__title-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .footer__logo-years {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: ) {
+}

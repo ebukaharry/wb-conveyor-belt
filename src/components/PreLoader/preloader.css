@@ -1,0 +1,61 @@
+.preloader {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 8rem;
+}
+
+.preloader__head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.preloader__duration {
+  font-size: clamp(0.5rem, 4vw, 1rem);
+}
+
+.preloader__logo {
+  width: 250px;
+}
+
+.preloader__title {
+  font-size: clamp(1rem, 7vw, 7rem);
+}
+
+.preloader__years {
+  width: 300px;
+}
+
+@media screen and (max-width: 650px) {
+  .text__container,
+  .preloader__title {
+    width: 100%;
+  }
+
+  .preloader__logo {
+    width: 100px;
+  }
+
+  .preloader__years {
+    width: 150px;
+  }
+}

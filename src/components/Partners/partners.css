@@ -1,0 +1,41 @@
+.client {
+  margin-top: 3rem;
+  padding: 4rem 3rem;
+  border-top: 2px solid black;
+}
+
+.client__title {
+  text-transform: uppercase;
+  font-size: clamp(1rem, 5vw, 2rem);
+  margin-bottom: 3rem;
+}
+
+.client__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: auto;
+}
+
+.client__img {
+  width: 15vw;
+  height: 80px;
+  object-fit: contain;
+  background: #000;
+  border-radius: 10px;
+  padding: 0.9rem;
+}
+
+@media screen and (max-width: 728px) {
+  .client {
+    padding: 4rem 1rem;
+  }
+
+  .client__img {
+    width: 100%;
+  }
+
+  .client__gallery {
+    grid-template-columns: 1fr;
+  }
+}
